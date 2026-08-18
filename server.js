@@ -253,7 +253,7 @@ app.post("/api/create-checkout-session", async (req, res) => {
         deliveryDate: deliveryDate || "",
         personalMessage: (personalMessage || "").slice(0, 300),
       },
-      success_url: `${SITE_URL}/merci.html?session_id={CHECKOUT_SESSION_ID}`,
+      success_url: `${process.env.SITE_URL}/forfaits.html?success=true`,
       cancel_url: `${SITE_URL}/forfaits.html`,
     });
 
