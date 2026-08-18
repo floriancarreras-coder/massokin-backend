@@ -1,0 +1,20 @@
+{
+  "name": "massokin-backend",
+  "version": "1.0.0",
+  "description": "Backend Node/Express pour les paiements Stripe Checkout de Massokin",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pdf-lib": "^1.17.1",
+    "resend": "^4.0.1",
+    "stripe": "^16.8.0"
+  }
+}
